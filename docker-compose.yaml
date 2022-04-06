@@ -9,8 +9,6 @@ services:
       MYSQL_ROOT_PASSWORD: passw0rd12345678910
     volumes:
       - db_data:/var/lib/mysql 
-    ports:
-      - 3306:3306     
   wp:
     depends_on:
       - db
