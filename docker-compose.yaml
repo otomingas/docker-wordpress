@@ -4,7 +4,9 @@ services:
     image: mariadb:10.7
     environment:
       MYSQL_DATABASE: wordpress
-      MYSQL_ROOT_PASSWORD: passw0rd
+      MYSQL_USER: wordpress
+      MYSQL_PASSWORD: par00l
+      MYSQL_ROOT_PASSWORD: passw0rd12345678910
     volumes:
       - db_data:/var/lib/mysql 
     ports:
